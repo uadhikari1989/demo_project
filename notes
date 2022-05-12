@@ -1,0 +1,22 @@
+#Branching Strategies
+
+Three types of branch
+1. Default, sometime referred as master, or sometime dev_branch, test_branch, prod_branch
+
+2. Feature branch
+
+3. Release branch
+
+Ideal scenario:
+Developer create a feature branch based off the default. He/She will then make their changes and then push it to 
+their branch. In my organization, then jenkins used to trigger that build.
+
+Once the build isnsuccessful, the then merge their feature branch to the default branch.
+
+Once all developers completed their code changes and merge their feature branch to the default, we then lock the default branch and then create a release branch.
+
+Once that release branch is complete, we then lock the release, old default and then create a next set of default branch.
+
+The next set willl be based off pom.xml file version
+
+For example, if the initial default branch is springboot-dev-0.1.0 the next default will be 0.1.1 and the release branch will be 0.1.0-RELEASE.
