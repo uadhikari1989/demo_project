@@ -20,3 +20,5 @@ Once that release branch is complete, we then lock the release, old default and 
 The next set willl be based off pom.xml file version
 
 For example, if the initial default branch is springboot-dev-0.1.0 the next default will be 0.1.1 and the release branch will be 0.1.0-RELEASE.
+
+Then the next cycle continues.
